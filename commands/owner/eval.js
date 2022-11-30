@@ -1,5 +1,6 @@
 module.exports = {
-  name: "e",
+  name: "eval",
+  aliases: "e",
   code: `$eval[$message]
   $onlyIf[$message!=;please evaluate something else to execute!]
   $onlyForIDS[$botOwnerid;]`
