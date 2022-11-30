@@ -16,5 +16,6 @@ module.exports = {
   $addButton[1;Mode;primary;mode_$authorID;no]
   $addButton[1;Button;primary;button_$authorID;no]
   $color[YELLOW]
+  $onlyPerms[manageserver;you need \`MANAGE_SERVER\` Permission in order to change on how i should start akinator game]
   `
 }
