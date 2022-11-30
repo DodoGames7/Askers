@@ -1,0 +1,17 @@
+{
+  "name": "Askers",
+  "version": "1.0.0-beta",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "dodo",
+  "license": "ISC",
+  "dependencies": {
+    "aoi.db": "^1.0.0",
+    "aoi.js": "^5.5.5",
+    "discord.js-akinator": "^3.4.5"
+  }
+}
