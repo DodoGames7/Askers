@@ -8,6 +8,7 @@ module.exports = {
   
   **Button**: enable buttons mode
   **Mode**: change the game mode
+  **Language**: change current language of akinator start system
   
   **Status**
   Button: \`$getServerVar[akin_buttons]\`
