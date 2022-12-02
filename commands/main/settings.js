@@ -13,6 +13,7 @@ module.exports = {
   Button: \`$getServerVar[akin_buttons]\`
   Mode: \`$getServerVar[akin_gametype]\`
   ]
+  $addButton[1;Language;primary;language_$authorID;no]
   $addButton[1;Mode;primary;mode_$authorID;no]
   $addButton[1;Button;primary;button_$authorID;no]
   $color[YELLOW]
