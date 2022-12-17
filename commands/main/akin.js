@@ -15,5 +15,10 @@ akinator(message, {
             useButtons: useButtons, 
             embedColor: embedColor 
         });
-        ]`
+        ]
+        $onlyBotPerms[managemessages;the following permissions are required in order to start game:
+          \`MANAGE_MESSAGES\`
+          please make sure i have these permissions otherwise i won't be able to work properly
+          ]
+          `
 }
