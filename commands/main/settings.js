@@ -13,6 +13,7 @@ module.exports = {
   **Status**
   Button: \`$getServerVar[akin_buttons]\`
   Mode: \`$getServerVar[akin_gametype]\`
+  Language: \`$getServerVar[akin_language]\`
   ]
   $addButton[1;Language;primary;language_$authorID;no]
   $addButton[1;Mode;primary;mode_$authorID;no]
