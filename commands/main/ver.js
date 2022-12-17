@@ -1,8 +1,9 @@
 module.exports = {
   name: "version",
   aliases: "ver",
-  code: `$title[1.0.0-beta1, minor fix]
-  $description[**changes**
+  code: `$title[1.0.0-beta1, minor update]
+  $description[
+    **changes**
 the user should now get error in case if a permission are missing when attempting to start the game
 added credits command including an button to redirect to the source code
 
