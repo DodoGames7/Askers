@@ -18,6 +18,11 @@ module.exports = {
 
   **stats**
   view some information regarding askers itself
+  aliases: \`botinfo\`
+
+ **credits**
+displays the credits
   ]
-  $color[YELLOW]`
+  $color[YELLOW]
+`
 }
