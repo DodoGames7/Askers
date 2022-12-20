@@ -14,6 +14,10 @@ module.exports = {
   Button: \`$getServerVar[akin_buttons]\`
   Mode: \`$getServerVar[akin_gametype]\`
   Language: \`$getServerVar[akin_language]\`
+  
+ **Warning**
+NSFW are not supported and it will never be added to Askers, attempting to guess an nsfw character will result in an message saying "I know who you are thinking of, but I believe this is not for young people"
+
   ]
   $addButton[1;Language;primary;language_$authorID;no]
   $addButton[1;Mode;primary;mode_$authorID;no]
