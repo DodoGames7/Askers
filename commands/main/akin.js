@@ -15,5 +15,6 @@ akinator(message, {
             useButtons: useButtons, 
             embedColor: embedColor 
         });
-        ]`
+        ]
+        $cooldown[5s;just wait after %time% to re-run this command]`
 }
