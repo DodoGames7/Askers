@@ -16,5 +16,5 @@ akinator(message, {
             embedColor: embedColor 
         });
         ]
-        $cooldown[5s;just wait after %time% to re-run this command]`
+        $cooldown[5s;just wait for about %time% before you can use this command again]`
 }
