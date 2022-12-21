@@ -5,3 +5,4 @@ module.exports = {
   $onlyIf[$message!=;please evaluate something else to execute!]
   $onlyForIDS[$botOwnerid;]`
 }
+
