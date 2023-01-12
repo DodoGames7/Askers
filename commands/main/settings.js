@@ -22,6 +22,6 @@ NSFW are not supported and it will never be added to Askers, attempting to guess
   $addButton[1;Mode;1;mode_$authorID;no]
   $addButton[1;Button;1;button_$authorID;no]
   $color[Yellow]
-  $onlyPerms[manageserver;you need \`MANAGE_SERVER\` Permission in order to change on how i should start akinator game]
+  $onlyPerms[manageguild;you need \`MANAGE_SERVER\` Permission in order to change on how i should start akinator game]
   `
 }
