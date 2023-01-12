@@ -1,7 +1,6 @@
 module.exports = {
   name: "settings",
   aliases: "setting",
-  $if: "v4",
   code: `
   $title[Askers Settings]
   $description[here are the general options that you can change:
