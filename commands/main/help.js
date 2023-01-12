@@ -23,6 +23,6 @@ module.exports = {
  **credits**
 displays the credits
   ]
-  $color[YELLOW]
+  $color[Yellow]
 `
 }

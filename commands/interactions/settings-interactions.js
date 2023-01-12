@@ -1,21 +1,21 @@
 module.exports = [{
   type: "interaction",
-  $if: "v4",
+  $if: "old",
   prototype: "button",
   code: `$if[$getServerVar[akin_buttons]==false]
-  $interactionReply[Successfully enabled Akinator discord buttons;;;;users;yes]
+  $interactionReply[Successfully enabled Akinator discord buttons;;;;all;yes]
   $setServerVar[akin_buttons;true]
   $elseif[$getServerVar[akin_buttons]==true]
-  $interactionReply[Successfully disabled Akinator discord buttons;;;;users;yes]
+  $interactionReply[Successfully disabled Akinator discord buttons;;;;all;yes]
   $setServerVar[akin_buttons;false]
   $endelseif
   $endif
   
-  $onlyif[$get[authorID]==$interactionData[author.id];{
-"content" : "You aren't the author of this interaction.",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
+  $onlyif[$get[authorID]==$interactionData[author.id];
+  You aren't the author of this interaction.
+  {options:{ephemeral: true}}
+  {extraOptions:{interaction: true}}
+  ]
 
 $onlyif[$get[customId]==button;]
 
@@ -24,18 +24,18 @@ $let[customId;$splitText[1]]
 $textSplit[$interactionData[customId];_] `
 },{
   type: "interaction",
-  $if: "v4",
+  $if: "old",
   prototype: "button",
   code: `
-  $interactionReply[what do you want to use;;{actionRow:{button:Character:primary:character_$get[authorID]:no}{button:Animal:primary:animal_$get[authorID]:no}{button:Object:primary:object_$get[authorID]:no}};;users;yes]
+  $interactionReply[what do you want to use;;{actionRow:{button:Character:1:character_$get[authorID]:no}{button:Animal:1:animal_$get[authorID]:no}{button:Object:1:object_$get[authorID]:no}};;all;yes]
 
 
   
-  $onlyif[$get[authorID]==$interactionData[author.id];{
-"content" : "You aren't the author of this interaction.",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
+  $onlyif[$get[authorID]==$interactionData[author.id]; 
+  You aren't the author of this interaction.
+  {options:{ephemeral: true}}
+  {extraOptions:{interaction: true}}
+  ]
 
 $onlyif[$get[customId]==mode;]
 
@@ -46,20 +46,20 @@ $textSplit[$interactionData[customId];_]
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Character\`;;;;users;yes]
+  code: `$interactionReply[changed game type to \`Character\`;;;;all;yes]
   $setServerVar[akin_gametype;character]
 
-  $onlyIf[$getServerVar[akin_gametype]!=character;{
-"content" : "that's already being used.",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
+  $onlyIf[$getServerVar[akin_gametype]!=character;
+  that's already being used.
+  {options:{ephemeral: true}}
+  {extraOptions:{interaction: true}}
+]
   
-  $onlyif[$get[authorID]==$interactionData[author.id];{
-"content" : "You aren't the author of this interaction.",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
+  $onlyif[$get[authorID]==$interactionData[author.id];
+  You aren't the author of this interaction.
+  {options:{ephemeral: true}}
+  {extraOptions:{interaction: true}}
+  ]
 
 $onlyif[$get[customId]==character;]
 
@@ -70,20 +70,20 @@ $textSplit[$interactionData[customId];_]
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Animal\`;;;;users;yes]
+  code: `$interactionReply[changed game type to \`Animal\`;;;;all;yes]
   $setServerVar[akin_gametype;animal]
 
-  $onlyIf[$getServerVar[akin_gametype]!=animal;{
-"content" : "that's already being used.",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
+  $onlyIf[$getServerVar[akin_gametype]!=animal;
+that's already being used.
+{options:{ephemeral: true}}
+{extraOptions:{interaction: true}}
+]
   
-  $onlyif[$get[authorID]==$interactionData[author.id];{
-"content" : "You aren't the author of this interaction.",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
+  $onlyif[$get[authorID]==$interactionData[author.id]; 
+  You aren't the author of this interaction.
+  {options:{ephemeral: true}}
+  {extraOptions:{interaction: true}}
+  ]
 
 $onlyif[$get[customId]==animal;]
 
@@ -93,20 +93,20 @@ $textSplit[$interactionData[customId];_]`
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Object\`;;;;users;yes]
+  code: `$interactionReply[changed game type to \`Object\`;;;;all;yes]
   $setServerVar[akin_gametype;object]
 
-  $onlyIf[$getServerVar[akin_gametype]!=object;{
-"content" : "that's already being used.",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
+  $onlyIf[$getServerVar[akin_gametype]!=object;
+  that's already being used.
+{options:{ephemeral: true}}
+{extraOptions:{interaction: true}}} 
+]
   
-  $onlyif[$get[authorID]==$interactionData[author.id];{
-"content" : "You aren't the author of this interaction.",
-"ephemeral" : true,
-"options" : { "interaction" : true }
-}]
+  $onlyif[$get[authorID]==$interactionData[author.id];
+  You aren't the author of this interaction.
+{options:{ephemeral: true}}
+{extraOptions:{interaction: true}}
+]
 
 $onlyif[$get[customId]==object;]
 

@@ -19,10 +19,10 @@ module.exports = {
 NSFW are not supported and it will never be added to Askers, attempting to guess an nsfw character will result in an message saying "I know who you are thinking of, but I believe this is not for young people"
 
   ]
-  $addButton[1;Language;primary;language_$authorID;no]
-  $addButton[1;Mode;primary;mode_$authorID;no]
-  $addButton[1;Button;primary;button_$authorID;no]
-  $color[YELLOW]
+  $addButton[1;Language;1;language_$authorID;no]
+  $addButton[1;Mode;1;mode_$authorID;no]
+  $addButton[1;Button;1;button_$authorID;no]
+  $color[Yellow]
   $onlyPerms[manageserver;you need \`MANAGE_SERVER\` Permission in order to change on how i should start akinator game]
   `
 }

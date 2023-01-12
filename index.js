@@ -4,16 +4,8 @@ const aoijs = require('aoi.js')
 const bot = new aoijs.AoiClient({
    token: process.env.TOKEN, // token (env is likely used for securing bot token, do not remove)
    prefix: ["a!", "<@$clientID>"],  //Discord Bot Prefix
-   intents: ["GUILDS", "GUILD_MESSAGES"], // the discord.js intents
-   database: { // force aoi.db as the default database
-    db: require("aoi.db"),
-    type: "aoi.db",
-    path: "./database/",
-    tables: ["main"],
-    extraOptions: {
-      dbType: "KeyValue",
-    },
-  }
+   intents: ["MessageContent", "Guilds", "GuildMessages"], // the discord.js intents
+   disableLogs: true
  })
 
 
