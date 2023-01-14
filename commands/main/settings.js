@@ -7,7 +7,7 @@ module.exports = {
   
   **Button**: enable buttons mode
   **Mode**: change the game mode
-  **Language**: change current language of akinator start system
+  **Language**: change current language of akinator start system (Soon.)
   
   **Status**
   Button: \`$getServerVar[akin_buttons]\`
@@ -18,7 +18,7 @@ module.exports = {
 NSFW are not supported and it will never be added to Askers, attempting to guess an nsfw character will result in an message saying "I know who you are thinking of, but I believe this is not for young people"
 
   ]
-  $addButton[1;Language;1;language_$authorID;no]
+  $addButton[1;Language;1;language_$authorID;yes]
   $addButton[1;Mode;1;mode_$authorID;no]
   $addButton[1;Button;1;button_$authorID;no]
   $color[Yellow]
