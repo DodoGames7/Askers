@@ -24,6 +24,7 @@ const loader = new aoijs.LoadCommands(bot)
  */
 
  // parser support
-const {  Util } = require("aoi.js");
-const { parse } = require(`aoi.parser`);
-Util.parsers.ErrorHandler = parse;
+const { Util } = require("aoi.js");
+const { setup } = require("aoi.parser");
+
+setup(Util);
