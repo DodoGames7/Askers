@@ -1,5 +1,5 @@
 # Askers
-aoi.js v5 akinator bot with options to customize the game
+aoi.js v6 akinator bot with options to customize the game
 
 # Features
 * a settings command to change on how the game should start, e.g changing modes, button mode, etc

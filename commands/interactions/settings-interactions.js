@@ -27,7 +27,7 @@ $textSplit[$interactionData[customId];_] `
   $if: "old",
   prototype: "button",
   code: `
-  $interactionReply[what do you want to use;;{actionRow:{button:Character:primary:character_$get[authorID]:no}{button:Animal:primary:animal_$get[authorID]:no}{button:Object:primary:object_$get[authorID]:no}};;all;yes]
+  $interactionReply[what do you want to use;;{actionRow:{button:Character:1:character_$get[authorID]:no}{button:Animal:1:animal_$get[authorID]:no}{button:Object:1:object_$get[authorID]:no}};;all;yes]
 
 
   
