@@ -1,12 +1,12 @@
 module.exports = {
   name: "start",
-  aliases:["akin"],
+  aliases:["akin", "akinator"],
   code: `$djsEval[
   const akinator = require("discord.js-akinator");
-const language = "$getServerVar[akin_language]";
+const language = "$getGuildVar[akin_language]";
 const childMode = true;
-const gameType = "$getServerVar[akin_gametype]";
-const useButtons = $getServerVar[akin_buttons];
+const gameType = "$getGuildVar[akin_gametype]";
+const useButtons = $getGuildVar[akin_buttons];
 const embedColor = "#1F1E33";
 akinator(message, {
             language: language, 

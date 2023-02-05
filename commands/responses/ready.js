@@ -3,5 +3,5 @@ module.exports = {
   channel: "",
   type: "ready",
   code: `$log[Ready!, invite the bot from there: $getBotInvite[sendmessages;viewchannel;managemessages]
-WARNING: you're using an alpha build of Askers which means that new changes or features may be unstable, be careful]`
+]`
 }

@@ -3,7 +3,7 @@ module.exports = {
   code: `$title[Asker's available commands]
   $description[**start**
   literally just starts akinator game
-  aliases: \`akin\`
+  aliases: \`akin\`, \`akinator\`
 
   **settings**
   let's you change on how should akinator game starts

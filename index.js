@@ -5,14 +5,14 @@ const bot = new aoijs.AoiClient({
    token: process.env.TOKEN, // token (env is likely used for securing bot token, do not remove)
    prefix: ["a!", "<@$clientID>"],  //Discord Bot Prefix
    intents: ["MessageContent", "Guilds", "GuildMessages"], // the discord.js intents
-   disableLogs: true
+   disableLogs: true,
+   events: ["onMessage", "onInteractionCreate"] // events
  })
 
 
 
 // handlers
 bot.variables(require("./handlers/variables.js")); // for bot variables (important, do not delete)
-require('./handlers/callbacks')(bot) // for loading most callbacks used in bot 
 
 
 const loader = new aoijs.LoadCommands(bot)
@@ -24,7 +24,20 @@ const loader = new aoijs.LoadCommands(bot)
  */
 
  // parser support
-const { Util } = require("aoi.js");
-const { setup } = require("aoi.parser");
+const { Util } = require( 'aoi.js' );
+const { parse, createAst} = require( 'aoi.parser' );
+const {
+     parseEmbed,
+     parseFiles,
+     parseExtraOptions
+} = require( 'aoi.parser/components' );
 
-setup(Util);
+Util.parsers.ErrorHandler = parse;
+
+Util.parsers.EmbedParser = ( data ) => {
+     return createAst( data ).children.map( parseEmbed );
+}
+
+Util.parsers.OptionsParser = ( data ) => {
+     return createAst( data ).children.map( parseExtraOptions );
+}

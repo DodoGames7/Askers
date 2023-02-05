@@ -10,9 +10,9 @@ module.exports = {
   **Language**: change current language of akinator start system (Experimental)
   
   **Status**
-  Button: \`$getServerVar[akin_buttons]\`
-  Mode: \`$getServerVar[akin_gametype]\`
-  Language: \`$getServerVar[akin_language]\`
+  Button: \`$getGuildVar[akin_buttons]\`
+  Mode: \`$getGuildVar[akin_gametype]\`
+  Language: \`$getGuildVar[akin_language]\`
   
  **Warning**
 NSFW are not supported and it will never be added to Askers, attempting to guess an nsfw character will result in an message saying "I know who you are thinking of, but I believe this is not for young people"
