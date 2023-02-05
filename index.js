@@ -4,23 +4,15 @@ const aoijs = require('aoi.js')
 const bot = new aoijs.AoiClient({
    token: process.env.TOKEN, // token (env is likely used for securing bot token, do not remove)
    prefix: ["a!", "<@$clientID>"],  //Discord Bot Prefix
-   intents: ["GUILDS", "GUILD_MESSAGES"], // the discord.js intents
-   database: { // force aoi.db as the default database
-    db: require("aoi.db"),
-    type: "aoi.db",
-    path: "./database/",
-    tables: ["main"],
-    extraOptions: {
-      dbType: "KeyValue",
-    },
-  }
+   intents: ["MessageContent", "Guilds", "GuildMessages"], // the discord.js intents
+   disableLogs: true,
+   events: ["onMessage", "onInteractionCreate"] // events
  })
 
 
 
 // handlers
 bot.variables(require("./handlers/variables.js")); // for bot variables (important, do not delete)
-require('./handlers/callbacks')(bot) // for loading most callbacks used in bot 
 
 
 const loader = new aoijs.LoadCommands(bot)
@@ -30,3 +22,22 @@ const loader = new aoijs.LoadCommands(bot)
  bot.cmd is object of Collections where the command data will be stored
  "./commands/" is the path of folder where all the commands' code will be present
  */
+
+ // parser support
+const { Util } = require( 'aoi.js' );
+const { parse, createAst} = require( 'aoi.parser' );
+const {
+     parseEmbed,
+     parseFiles,
+     parseExtraOptions
+} = require( 'aoi.parser/components' );
+
+Util.parsers.ErrorHandler = parse;
+
+Util.parsers.EmbedParser = ( data ) => {
+     return createAst( data ).children.map( parseEmbed );
+}
+
+Util.parsers.OptionsParser = ( data ) => {
+     return createAst( data ).children.map( parseExtraOptions );
+}
