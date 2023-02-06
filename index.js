@@ -28,7 +28,6 @@ const { Util } = require( 'aoi.js' );
 const { parse, createAst} = require( 'aoi.parser' );
 const {
      parseEmbed,
-     parseFiles,
      parseExtraOptions
 } = require( 'aoi.parser/components' );
 
