@@ -7,7 +7,7 @@ const language = "$getGuildVar[akin_language]";
 const childMode = true;
 const gameType = "$getGuildVar[akin_gametype]";
 const useButtons = $getGuildVar[akin_buttons];
-const embedColor = "#1F1E33";
+const embedColor = "$getGuildVar[akin_embedcolor]";
 akinator(message, {
             language: language, 
             childMode: childMode, 
