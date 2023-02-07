@@ -11,3 +11,5 @@ there have been many public akinator bot projects but rarely any of them allowed
 
 # using the bot without setting up
 don't want to setup the bot?, fortunately you can invite the public version of this bot by clicking on this [link](https://discord.com/api/oauth2/authorize?client_id=860567781925322759&scope=bot+applications.commands&permissions=11264)
+
+Note: in case if you're confused, the prefix is the same as the one used in Asker's source code aka `a!`
