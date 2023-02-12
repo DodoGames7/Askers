@@ -5,7 +5,7 @@ const bot = new aoijs.AoiClient({
    token: process.env.TOKEN, // token (env is likely used for securing bot token, do not remove)
    prefix: ["a!", "<@$clientID>"],  //Discord Bot Prefix
    intents: ["MessageContent", "Guilds", "GuildMessages"], // the discord.js intents
-   disableLogs: true,
+   aoiLogs: true, // get rid of aoi.js ready logs
    events: ["onMessage", "onInteractionCreate"] // events
  })
 
