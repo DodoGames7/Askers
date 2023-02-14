@@ -6,7 +6,8 @@ const bot = new aoijs.AoiClient({
    prefix: ["a!", "<@$clientID>"],  //Discord Bot Prefix
    intents: ["MessageContent", "Guilds", "GuildMessages"], // the discord.js intents
    aoiLogs: false,
-   events: ["onMessage", "onInteractionCreate"] // events
+   events: ["onMessage", "onInteractionCreate"], // events
+   aoiWarning: true
  })
 
 
