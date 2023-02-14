@@ -3,10 +3,10 @@ module.exports = [{
   $if: "old",
   prototype: "button",
   code: `$if[$getGuildVar[akin_buttons]==false]
-  $interactionReply[Successfully enabled Akinator discord buttons;;;;all;yes]
+  $interactionReply[Successfully enabled Akinator discord buttons;;;;all;true]
   $setGuildVar[akin_buttons;true]
   $elseif[$getGuildVar[akin_buttons]==true]
-  $interactionReply[Successfully disabled Akinator discord buttons;;;;all;yes]
+  $interactionReply[Successfully disabled Akinator discord buttons;;;;all;true]
   $setGuildVar[akin_buttons;false]
   $endelseif
   $endif
@@ -27,7 +27,7 @@ $textSplit[$interactionData[customId];_] `
   $if: "old",
   prototype: "button",
   code: `
-  $interactionReply[what do you want to use;;{actionRow:{button:Character:1:character_$get[authorID]:no}{button:Animal:1:animal_$get[authorID]:no}{button:Object:1:object_$get[authorID]:no}};;all;yes]
+  $interactionReply[what do you want to use;;{actionRow:{button:Character:1:character_$get[authorID]:false}{button:Animal:1:animal_$get[authorID]:false}{button:Object:1:object_$get[authorID]:false}};;all;true]
 
 
   
@@ -46,7 +46,7 @@ $textSplit[$interactionData[customId];_]
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Character\`;;;;all;yes]
+  code: `$interactionReply[changed game type to \`Character\`;;;;all;true]
   $setGuildVar[akin_gametype;character]
 
   $onlyIf[$getGuildVar[akin_gametype]!=character;
@@ -70,7 +70,7 @@ $textSplit[$interactionData[customId];_]
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Animal\`;;;;all;yes]
+  code: `$interactionReply[changed game type to \`Animal\`;;;;all;true]
   $setGuildVar[akin_gametype;animal]
 
   $onlyIf[$getGuildVar[akin_gametype]!=animal;
@@ -93,7 +93,7 @@ $textSplit[$interactionData[customId];_]`
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Object\`;;;;all;yes]
+  code: `$interactionReply[changed game type to \`Object\`;;;;all;true]
   $setGuildVar[akin_gametype;object]
 
   $onlyIf[$getGuildVar[akin_gametype]!=object;
@@ -116,7 +116,7 @@ $textSplit[$interactionData[customId];_]`
 },{ 
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[please select the Available language you would like to be used in akin start;;{actionRow:{selectMenu:akinmenu:Language:1:1:no:{selectMenuOptions:Arabic:ar:Arabic Language:no}{selectMenuOptions:English:en:Main Language:no}{selectMenuOptions:French:fr:French Language:no}{selectMenuOptions:German:de:German Language:no}{selectMenuOptions:italian:it:italian Language:no}{selectMenuOptions:Polish:pl:Polish Language:no}{selectMenuOptions:Portuguese:pt:Portuguese Language:no}{selectMenuOptions:Russian:ru:Russian Language:no}{selectMenuOptions:Turkish:tr:Turkish Language:no}{selectMenuOptions:Japanese:ja:Japanese Language:no}{selectMenuOptions:Spanish:es:Spanish Language:no}{selectMenuOptions:Hindi:hi:Hindi Language:no}{selectMenuOptions:Bengali:bn:Bengali Language:no}}};;users;yes]
+  code: `$interactionReply[please select the Available language you would like to be used in akin start;;{actionRow:{selectMenu:akinmenu:Language:1:1:false:{selectMenuOptions:Arabic:ar:Arabic Language:false}{selectMenuOptions:English:en:Main Language:false}{selectMenuOptions:French:fr:French Language:false}{selectMenuOptions:German:de:German Language:false}{selectMenuOptions:italian:it:italian Language:false}{selectMenuOptions:Polish:pl:Polish Language:false}{selectMenuOptions:Portuguese:pt:Portuguese Language:false}{selectMenuOptions:Russian:ru:Russian Language:false}{selectMenuOptions:Turkish:tr:Turkish Language:false}{selectMenuOptions:Japanese:ja:Japanese Language:false}{selectMenuOptions:Spanish:es:Spanish Language:false}{selectMenuOptions:Hindi:hi:Hindi Language:false}{selectMenuOptions:Bengali:bn:Bengali Language:false}}};;users;true]
 
 
 $onlyif[$get[authorID]==$interactionData[author.id];
@@ -137,7 +137,7 @@ $textSplit[$interactionData[customId];_]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;ar]
-$interactionReply[language set to \`Arabic\`;;;;all;yes]
+$interactionReply[language set to \`Arabic\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=ar;
 that's already being used
@@ -152,7 +152,7 @@ $onlyIf[$interactionData[values[0]]==ar;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;de]
-$interactionReply[language set to \`German\`;;;;all;yes]
+$interactionReply[language set to \`German\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=de;
 that's already being used
@@ -167,7 +167,7 @@ $onlyIf[$interactionData[values[0]]==de;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;it]
-$interactionReply[language set to \`italian\`;;;;all;yes]
+$interactionReply[language set to \`italian\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=it;
 that's already being used
@@ -182,7 +182,7 @@ $onlyIf[$interactionData[values[0]]==it;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;pl]
-$interactionReply[language set to \`Polish\`;;;;all;yes]
+$interactionReply[language set to \`Polish\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=pl;
 that's already being used
@@ -197,7 +197,7 @@ $onlyIf[$interactionData[values[0]]==pl;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;en]
-$interactionReply[language set to \`English\`;;;;all;yes]
+$interactionReply[language set to \`English\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=en;
 that's already being used
@@ -212,7 +212,7 @@ $onlyIf[$interactionData[values[0]]==en;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;fr]
-$interactionReply[language set to \`French\`;;;;all;yes]
+$interactionReply[language set to \`French\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=fr;
 that's already being used
@@ -227,7 +227,7 @@ $onlyIf[$interactionData[values[0]]==fr;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;pt]
-$interactionReply[language set to \`Portuguese\`;;;;all;yes]
+$interactionReply[language set to \`Portuguese\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=pt;
 that's already being used
@@ -242,7 +242,7 @@ $onlyIf[$interactionData[values[0]]==pt;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;ru]
-$interactionReply[language set to \`Russian\`;;;;all;yes]
+$interactionReply[language set to \`Russian\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=ru;
 that's already being used
@@ -257,7 +257,7 @@ $onlyIf[$interactionData[values[0]]==ru;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;tr]
-$interactionReply[language set to \`Turkish\`;;;;all;yes]
+$interactionReply[language set to \`Turkish\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=tr;
 that's already being used
@@ -272,7 +272,7 @@ $onlyIf[$interactionData[values[0]]==tr;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;ja]
-$interactionReply[language set to \`Japanese\`;;;;all;yes]
+$interactionReply[language set to \`Japanese\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=ja;
 that's already being used
@@ -287,7 +287,7 @@ $onlyIf[$interactionData[values[0]]==ja;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;es]
-$interactionReply[language set to \`Spanish\`;;;;all;yes]
+$interactionReply[language set to \`Spanish\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=es;
 that's already being used
@@ -302,7 +302,7 @@ $onlyIf[$interactionData[values[0]]==es;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;hi]
-$interactionReply[language set to \`Hindi\`;;;;all;yes]
+$interactionReply[language set to \`Hindi\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=hi;
 that's already being used
@@ -317,7 +317,7 @@ $onlyIf[$interactionData[values[0]]==hi;]
     type: "interaction",
     prototype: "selectMenu",
     code: `$setGuildVar[akin_language;bn]
-$interactionReply[language set to \`Bengali\`;;;;all;yes]
+$interactionReply[language set to \`Bengali\`;;;;all;true]
 
 $onlyIf[$getGuildVar[akin_language]!=bn;
 that's already being used
