@@ -4,7 +4,7 @@ module.exports = {
   code: `$title[1.0.2-stable]
   $description[
     **changes**
-  updated to 6.1.0 version of v6 (github version)
+  updated to 6.1.0 version of v6 (npm version)
   buttons are now enabled by default (you can still disable them through \`settings\` cmd though.)
   add alias \`akinator\` to \`start\` cmd
 
