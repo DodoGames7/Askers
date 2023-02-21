@@ -9,6 +9,7 @@ module.exports = {
     
     **changes**
     updated to 6.1.1 of aoi.js version 6
+    removed the \`(Experimental)\` tag from the description regarding \`Language\` in \`settings\` cmd
   ]
   $color[Yellow]
   $footer[there we go again!]
