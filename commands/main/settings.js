@@ -7,7 +7,7 @@ module.exports = {
   
   **Button**: enable buttons mode
   **Mode**: change the game mode
-  **Language**: change current language of akinator start system (Experimental)
+  **Language**: change current language of akinator game
   
   **Status**
   Button: \`$getGuildVar[akin_buttons]\`

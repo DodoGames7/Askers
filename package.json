@@ -1,6 +1,6 @@
 {
   "name": "Askers",
-  "version": "1.0.2-stable",
+  "version": "1.0.2-patched",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,9 @@
   "author": "dodoGames",
   "license": "ISC",
   "dependencies": {
-    "aoi.parser": "^1.2.1",
-    "aoi.js": "6.1.0",
+    "aoi.parser": "^1.2.3",
+    "aoi.js": "6.1.1",
     "discord.js-akinator": "^4.0.4",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }
