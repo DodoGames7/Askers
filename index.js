@@ -7,7 +7,8 @@ const bot = new aoijs.AoiClient({
    intents: ["MessageContent", "Guilds", "GuildMessages"], // the discord.js intents
    aoiLogs: false,
    events: ["onMessage", "onInteractionCreate"], // events
-   aoiWarning: true
+   aoiWarning: true,
+   guildOnly: false
  })
 
 
