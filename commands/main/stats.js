@@ -1,10 +1,13 @@
 module.exports = {
   name: "stats",
+  executeAt: "guild",
   aliases: "botinfo",
-  description: "view some information regarding askers itself",
+  info: {
+    description: "view some information regarding askers itself"
+  },
   code: `$title[Askers's stats]
   $addField[Uptime;$uptime[humanize]]
-  $addField[Askers version;1.0.3-alpha]
+  $addField[Askers version;1.0.3-beta]
   $addField[Library Language;Aoi.js;true]
   $addField[Amount of ram;$ram;true]
   $addField[Amount of CPU;$cpu;true]

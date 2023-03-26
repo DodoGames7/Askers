@@ -1,10 +1,11 @@
 module.exports = [{
     name: "func",
     aliases: "aoi",
+    executeAt: "both",
     info: {
       description: "look for information about aoi.js functions",
       usage: "a!func < function name >",
-      notes: "user must be the bot owner to use the command"
+      notes: "this command uses a api that contains credit, keep that in mind."
     },
     code: `
     $author[$userTag[$authorID];$userAvatar[$authorID]]

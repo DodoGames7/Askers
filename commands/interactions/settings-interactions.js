@@ -327,4 +327,36 @@ that's already being used
 
 $onlyIf[$interactionData[values[0]]==bn;]
 `
+},{
+  type: "interaction",
+  prototype: "button",
+  code: `$interactionUpdate[;{newEmbed:{title:Askers Settings}{description:here are the general options that you can change:
+  
+  **Button**#COLON# enable buttons mode
+  **Mode**#COLON# change the game mode
+  **Language**#COLON# change current language of akinator start system
+  **Color**#COLON# change the current embed color used in \`start\` cmd
+  
+  **Status**
+  Button#COLON# \`$get[buttonsstatus]\`
+  Mode#COLON# \`$getGuildVar[akin_gametype]\`
+  Language#COLON# \`$getGuildVar[akin_language]\`
+  Color#COLON# \`$getGuildVar[akin_embedcolor]\`
+  
+ **Warning**
+NSFW are not supported and it will never be added to Askers, attempting to guess an nsfw character will result in an message saying "I know who you are thinking of, but I believe this is not for young people"}{color:Yellow}};{actionRow:{button:Button:1:button_$authorID:false}{button:Mode:1:mode_$authorID:false}{button::2:refresh_$authorID:false:🔄}{button:Language:1:language_$authorID:false}{button:Color:1:color_$authorID:false}}]
+
+$onlyif[$get[authorID]==$interactionData[author.id];
+  You aren't the author of this interaction.
+{options:{ephemeral: true}}
+{extraOptions:{interaction: true}}
+]
+
+$onlyif[$get[customId]==refresh;]
+
+$let[authorID;$splitText[2]]
+$let[customId;$splitText[1]] 
+$textSplit[$interactionData[customId];_]
+
+  $let[buttonsstatus;$replaceText[$replaceText[$getGuildVar[akin_buttons];true;Enabled];false;Disabled]]`
 }]

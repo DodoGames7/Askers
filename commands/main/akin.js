@@ -1,6 +1,9 @@
 module.exports = {
   name: "start",
   aliases:["akin", "akinator"],
+  info: {
+    description: "literally just starts akinator game"
+  },
   code: `$djsEval[
   const akinator = require("discord.js-akinator");
 const language = "$getGuildVar[akin_language]";

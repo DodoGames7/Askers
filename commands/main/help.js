@@ -1,27 +1,28 @@
 module.exports = {
   name: "help",
+  executeAt: "guild",
   code: `$title[Asker's available commands]
   $description[**start**
-  literally just starts akinator game
+  $commandInfo[start;info.description]
   aliases: \`akin\`, \`akinator\`
 
   **settings**
-  let's you change on how should akinator game starts
+  $commandInfo[settings;info.description]
   aliases: \`setting\`
   
   **version**
-  view the current release of Askers
+  $commandInfo[version;info.description]
   aliases: \`ver\`
 
   **invite**
-  there is a reason on why this exists
+  $commandInfo[invite;info.description]
 
   **stats**
-  view some information regarding askers itself
+  $commandInfo[stats;info.description]
   aliases: \`botinfo\`
 
  **credits**
-displays the credits
+ $commandInfo[credits;info.description]
   ]
   $color[Yellow]
 `

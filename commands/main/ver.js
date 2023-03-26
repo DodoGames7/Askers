@@ -1,17 +1,23 @@
 module.exports = {
   name: "version",
+  executeAt: "both",
   aliases: "ver",
-  code: `$title[1.0.3-alpha, colors?]
+  info: {
+    description: "view the current release of Askers"
+  },
+  code: `$title[1.0.3-beta, no more alpha]
   $description[
     **changes**
-    you can now view the avaliable colors of Askers's Feature by going into \`settings\` command, then press on \`Color\` and you can view the list of avaliable colors that you can use
-    updated aoi.parser to 1.2.4 to fix something...
+    status for button option now says \`Enabled/Disabled\` instead of \`true/false\`
+    added refresh button to update status of options in \`settings\`
+    added \`devcmds\` command for the user who is bot owner of his bot.
+    added \`func\` to look for information about aoi.js functions (bot owner only)
 
-    **fixes**
-    fixed \`update\` being not actually updating commands (for devs)
-    
+    **other**
+    added an button dedicated to Asker's Support server in \`credits\` command.
+    added dm support (Experimental), some commands may only work in a server, some works in both server and dms.
+
   ]
-  $footer[new alpha build, new me again!]
   $color[Yellow]
 `
 }
