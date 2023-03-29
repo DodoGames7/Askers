@@ -116,7 +116,7 @@ $textSplit[$interactionData[customId];_]`
 },{ 
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[please select the Available language you would like to be used in akin start;;{actionRow:{selectMenu:akinmenu:Language:1:1:false:{selectMenuOptions:Arabic:ar:Arabic Language:false}{selectMenuOptions:English:en:Main Language:false}{selectMenuOptions:French:fr:French Language:false}{selectMenuOptions:German:de:German Language:false}{selectMenuOptions:italian:it:italian Language:false}{selectMenuOptions:Polish:pl:Polish Language:false}{selectMenuOptions:Portuguese:pt:Portuguese Language:false}{selectMenuOptions:Russian:ru:Russian Language:false}{selectMenuOptions:Turkish:tr:Turkish Language:false}{selectMenuOptions:Japanese:ja:Japanese Language:false}{selectMenuOptions:Spanish:es:Spanish Language:false}{selectMenuOptions:Hindi:hi:Hindi Language:false}{selectMenuOptions:Bengali:bn:Bengali Language:false}{selectMenuOptions:Ukraine:uk:Ukraine Language:false}}};;users;true]
+  code: `$interactionReply[please select the Available language you would like to be used in akin start;;{actionRow:{selectMenu:akinmenu:Language:1:1:false:{selectMenuOptions:Arabic:ar:Arabic Language:false}{selectMenuOptions:English:en:Main Language:false}{selectMenuOptions:French:fr:French Language:false}{selectMenuOptions:German:de:German Language:false}{selectMenuOptions:italian:it:italian Language:false}{selectMenuOptions:Polish:pl:Polish Language:false}{selectMenuOptions:Portuguese:pt:Portuguese Language:false}{selectMenuOptions:Russian:ru:Russian Language:false}{selectMenuOptions:Turkish:tr:Turkish Language:false}{selectMenuOptions:Japanese:ja:Japanese Language:false}{selectMenuOptions:Spanish:es:Spanish Language:false}{selectMenuOptions:Hindi:hi:Hindi Language:false}{selectMenuOptions:Bengali:bn:Bengali Language:false}{selectMenuOptions:Ukraine:uk:Ukraine Language:false}{selectMenuOptions:Indonesian:id:Indonesian Language:false}}};;users;true]
 
 
 $onlyif[$get[authorID]==$interactionData[author.id];
@@ -373,5 +373,20 @@ that's already being used
 ]
 
 $onlyIf[$interactionData[values[0]]==uk;]
+`
+},{
+  name: "akinmenu",
+  type: "interaction",
+  prototype: "selectMenu",
+  code: `$setGuildVar[akin_language;id]
+$interactionReply[language set to \`Indonesian\`;;;;all;true]
+
+$onlyIf[$getGuildVar[akin_language]!=id;
+that's already being used
+{options:{ephemeral: true}}
+{extraOptions:{interaction: true}}
+]
+
+$onlyIf[$interactionData[values[0]]==id;]
 `
 }]
