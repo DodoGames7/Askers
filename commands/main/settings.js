@@ -1,6 +1,7 @@
 module.exports = {
   name: "settings",
   aliases: "setting",
+  executeAt: "guild",
   info: {
     description: "let's you change on how should akinator game starts"
   },

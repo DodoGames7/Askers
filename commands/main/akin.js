@@ -1,6 +1,7 @@
 module.exports = {
   name: "start",
   aliases:["akin", "akinator"],
+  executeAt: "guild",
   info: {
     description: "literally just starts akinator game"
   },
