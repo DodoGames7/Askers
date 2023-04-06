@@ -6,7 +6,10 @@ const bot = new aoijs.AoiClient({
    prefix: ["a!", "<@$clientID>"],  //Discord Bot Prefix
    intents: ["MessageContent", "Guilds", "GuildMessages"], // the discord.js intents
    aoiLogs: false, // get rid of aoi.js ready logs
-   events: ["onMessage", "onInteractionCreate"] // events
+   events: ["onMessage", "onInteractionCreate"], // events
+   options: {
+     reverse: true // bottom to top again
+   }
  })
 
 
@@ -23,20 +26,4 @@ const loader = new aoijs.LoadCommands(bot)
  "./commands/" is the path of folder where all the commands' code will be present
  */
 
- // parser support
-const { Util } = require( 'aoi.js' );
-const { parse, createAst} = require( 'aoi.parser' );
-const {
-     parseEmbed,
-     parseExtraOptions
-} = require( 'aoi.parser/components' );
-
-Util.parsers.ErrorHandler = parse;
-
-Util.parsers.EmbedParser = ( data ) => {
-     return createAst( data ).children.map( parseEmbed );
-}
-
-Util.parsers.OptionsParser = ( data ) => {
-     return createAst( data ).children.map( parseExtraOptions );
-}
+bot.start()
