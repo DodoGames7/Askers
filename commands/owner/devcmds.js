@@ -7,6 +7,12 @@ module.exports = {
     **eval**
     $commandInfo[eval;info.description]
     Usage: \`$commandInfo[eval;info.usage]\`
+    Aliases: \`e\`
+
+    **execute**
+    $commandInfo[execute;info.description]
+    Usage: \`$commandInfo[execute;info.usage]\`
+    Aliases: \`exec\`, \`terminal\`
 
     **update**
     $commandInfo[update;info.description]
@@ -15,6 +21,7 @@ module.exports = {
     $commandInfo[func;info.description]
     Usage: \`$commandInfo[func;info.usage]\`
     Notes: \`$commandInfo[func;info.notes]\`
+    Aliases: \`aoi\`
     ]
     $color[Yellow]
     $onlyForIDS[$botOwnerID;]
