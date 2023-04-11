@@ -1,4 +1,4 @@
-const { AoiClient, LoadCommands } = require("aoi.js");
+const { AoiClient, LoadCommands, Util } = require("aoi.js");
 
 
 const bot = new AoiClient({
@@ -26,7 +26,6 @@ const loader = new LoadCommands(bot);
  */
 
  // enable aoi.parser for ephemeral messages
-const { Util } = require( 'aoi.js' );
 const { parse, createAst } = require( 'aoi.parser' );
 const {
      parseExtraOptions
