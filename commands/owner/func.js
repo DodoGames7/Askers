@@ -4,7 +4,7 @@ module.exports = [{
     executeAt: "both",
     info: {
       description: "look for information about aoi.js functions",
-      usage: "a!func < function name >",
+      usage: "a!func < function name (with the dollar sign $ at the start.) >",
       notes: "this command uses a api that contains credit, keep that in mind."
     },
     code: `
