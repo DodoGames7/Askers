@@ -19,6 +19,7 @@ module.exports = [{
     $addButton[1;Documentation;link;$nonEscape[$getObjectProperty[link]];false]
     $onlyIf[$getObjectProperty[err]!=DOCS NOT FOUND;]
     $createObject[$jsonRequest[https://aoijs-api.bumblebeerox1.repl.co/api/aoijs/function?name=$message]]
-    $onlyIf[$checkContains[$message[1];$]==true;]
-    $onlyForIDS[$botOwnerID;]`
+    $onlyIf[$checkContains[$message[1];$]==true; your command argument must contain the dollar sign \`$\` first.]
+    $onlyIf[$message[1]!=;provide an function name first.]
+    `
 }] // disclaimer: api has credits
