@@ -5,17 +5,24 @@ module.exports = {
   info: {
     description: "view the current release of Askers"
   },
-  code: `$title[1.0.3-beta, no more alpha]
+  code: `$title[1.0.3-beta2, Perfection!]
   $description[
     **changes**
-    status for button option now says \`Enabled/Disabled\` instead of \`true/false\`
-    added refresh button to update status of options in \`settings\`
-    added \`devcmds\` command for the user who is bot owner of his bot.
-    added \`func\` to look for information about aoi.js functions (bot owner only)
+    changed the ram on how it's shown in \`stats\` to look better.
+    updated djs (again).
+    added colors option finally after a while.
+    if the amount of users of the bot is large then separate them, for example \`1000\` would be \`1,000\`.
+    and other changes....
+
+    **fixes**
+    fixed \`func\` being usable by everyone than just the dev of the bot
+    add errors to \`func\` to clear confusion
 
     **other**
-    added an button dedicated to Asker's Support server in \`credits\` command.
-    added dm support (Experimental), some commands may only work in a server, some works in both server and dms.
+   added \`readfile\` command for devs (run \`devcmds\` command for information).
+   moved interaction files of the bot and it's ready file to an folder named \`automation\`
+   make \`devcmds\` include Aliases of each bot owner command just like help command.
+
 
   ]
   $color[Yellow]

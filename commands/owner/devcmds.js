@@ -22,6 +22,11 @@ module.exports = {
     Usage: \`$commandInfo[func;info.usage]\`
     Notes: \`$commandInfo[func;info.notes]\`
     Aliases: \`aoi\`
+
+    **readfile**
+    $commandInfo[readfile;info.description]
+    Usage: \`$commandInfo[readfile;info.usage]\`
+    Aliases: \`checkfile\`, \`viewfile\`
     ]
     $color[Yellow]
     $onlyForIDS[$botOwnerID;]

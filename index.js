@@ -5,10 +5,10 @@ const bot = new AoiClient({
    token: process.env.TOKEN, // token (env is likely used for securing bot token, do not remove)
    prefix: ["a!", "<@$clientID>"],  //Discord Bot Prefix
    intents: ["MessageContent", "Guilds", "GuildMessages", "DirectMessages"], // the discord.js intents
-   aoiLogs: false,
+   aoiLogs: false, // disables default aoi.js message for consoles
    events: ["onMessage", "onInteractionCreate"], // events
-   aoiWarning: true,
-   guildOnly: false
+   aoiWarning: true, // disables aoi.js update warnings
+   guildOnly: false // don't force the commands to be only executed in guild
  })
 
 
