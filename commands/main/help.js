@@ -12,7 +12,7 @@ module.exports = {
   
   **version**
   $commandInfo[version;info.description]
-  aliases: \`ver\`
+  aliases: \`ver\`, \`changelog\`
 
   **invite**
   $commandInfo[invite;info.description]

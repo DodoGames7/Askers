@@ -1,7 +1,7 @@
 module.exports = {
   name: "version",
   executeAt: "both",
-  aliases: "ver",
+  aliases: ["ver", "changelog"],
   info: {
     description: "view the current release of Askers"
   },
