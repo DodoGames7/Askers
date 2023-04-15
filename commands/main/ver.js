@@ -22,7 +22,7 @@ module.exports = {
    added \`readfile\` command for devs (run \`devcmds\` command for information).
    moved interaction files of the bot and it's ready file to an folder named \`automation\`
    make \`devcmds\` include Aliases of each bot owner command just like help command.
-   use \`$commandInfo\` to return command descriptions instead of using the Classical method of writing descriptions manually at each comand.
+   use \`#CHAR#commandInfo\` to return command descriptions instead of using the Classical method of writing descriptions manually at each comand.
 
 
   ]
