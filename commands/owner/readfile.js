@@ -6,7 +6,7 @@ module.exports = {
     executeAt: "both",
     $if: "old",
     info: {
-        description: "reads an file you specify, for example bot files of Askers itself.",
+        description: "Reads an file you specify, for example bot files of Askers itself.",
         usage: "a!readfile < file name to view (e.g package.json). >"
       },
     code: `$if[$charCount[$readFile[$message]]>=2000]

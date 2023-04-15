@@ -2,7 +2,7 @@ module.exports = {
   name: "invite",
   executeAt: "both",
   info: {
-    description: "there is a reason on why this exists"
+    description: "There is a reason on why this exists"
   },
   code: `$title[inviting Askers]
   $description[you can invite Askers to your discord server by clicking on the button Below]

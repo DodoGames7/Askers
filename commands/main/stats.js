@@ -3,7 +3,7 @@ module.exports = {
   executeAt: "guild",
   aliases: "botinfo",
   info: {
-    description: "view some information regarding askers itself"
+    description: "View some information regarding askers itself"
   },
   code: `$title[Askers's stats]
   $addField[Uptime;$uptime[humanize]]

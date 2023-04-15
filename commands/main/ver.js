@@ -3,7 +3,7 @@ module.exports = {
   executeAt: "both",
   aliases: ["ver", "changelog"],
   info: {
-    description: "view the current release of Askers"
+    description: "View the current release of Askers"
   },
   code: `$title[1.0.3-beta2, Perfection!]
   $description[
