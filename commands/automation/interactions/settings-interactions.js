@@ -332,7 +332,7 @@ $onlyIf[$interactionData[values[0]]==bn;]
   prototype: "button",
   code: `$interactionUpdate[;{newEmbed:{title:Askers Settings}{description:here are the general options that you can change:
   
-  **Button**#COLON# enable buttons mode
+  **Button**#COLON# Whether or not the Game should start with discord Buttons
   **Mode**#COLON# change the game mode
   **Language**#COLON# change current language of akinator start system
   **Color**#COLON# change the current embed color used in \`start\` cmd
