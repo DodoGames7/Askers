@@ -9,7 +9,7 @@ module.exports = {
   $title[Askers Settings]
   $description[here are the general options that you can change:
   
-  **Button**: enable buttons mode
+  **Button**: Whether or not the Game should start with discord Buttons
   **Mode**: change the game mode
   **Language**: change current language of akinator start system
   **Color**: change the current embed color used in \`start\` cmd
