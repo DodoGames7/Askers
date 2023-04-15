@@ -14,12 +14,13 @@ module.exports = {
   **Language**: change current language of akinator start system
   **Color**: change the current embed color used in \`start\` cmd
   
-  **Status**
+  **Current Settings**
   Button: \`$get[buttonsstatus]\`
   Mode: \`$getGuildVar[akin_gametype]\`
   Language: \`$getGuildVar[akin_language]\`
   Color: \`$getGuildVar[akin_embedcolor]\`
-  
+  If The Shown settings are outdated after making changes, make sure to click the button with 🔄 Emoji to show the new settings.
+
  **Warning**
 NSFW are not supported and it will never be added to Askers, attempting to guess an nsfw character will result in an message saying "I know who you are thinking of, but I believe this is not for young people"
 

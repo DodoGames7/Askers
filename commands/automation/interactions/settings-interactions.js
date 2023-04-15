@@ -337,12 +337,13 @@ $onlyIf[$interactionData[values[0]]==bn;]
   **Language**#COLON# change current language of akinator start system
   **Color**#COLON# change the current embed color used in \`start\` cmd
   
-  **Status**
+  **Current Settings**
   Button#COLON# \`$get[buttonsstatus]\`
   Mode#COLON# \`$getGuildVar[akin_gametype]\`
   Language#COLON# \`$getGuildVar[akin_language]\`
   Color#COLON# \`$getGuildVar[akin_embedcolor]\`
-  
+  If The Shown settings are outdated after making changes, make sure to click the button with 🔄 Emoji to show the new settings.
+
  **Warning**
 NSFW are not supported and it will never be added to Askers, attempting to guess an nsfw character will result in an message saying "I know who you are thinking of, but I believe this is not for young people"}{color:Yellow}};{actionRow:{button:Button:1:button_$authorID:false}{button:Mode:1:mode_$authorID:false}{button::2:refresh_$authorID:false:🔄}{button:Language:1:language_$authorID:false}{button:Color:1:color_$authorID:false}}]
 
