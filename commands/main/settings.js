@@ -22,7 +22,7 @@ module.exports = {
   If The Shown settings are outdated after making changes, make sure to click the button with 🔄 Emoji to show the new settings.
 
  **Warning**
-NSFW are not supported and it will never be added to Askers, attempting to guess an nsfw character will result in an message saying "I know who you are thinking of, but I believe this is not for young people"
+NSFW are not supported and it will never be added to Askers, Attempting to guess an nsfw character will result in the following message: "I know who you are thinking of, but I believe this is not for young people"
 
   ]
   $addButton[1;Color;1;color_$authorID;false]
