@@ -25,7 +25,7 @@ const loader = new LoadCommands(bot);
  "./commands/" is the path of folder where all the commands' code will be present
  */
 
- // enable aoi.parser for ephemeral messages
+ // Enable aoi.parser for ephemeral messages including handling Errors.
 const { parse, createAst } = require( 'aoi.parser' );
 const {
      parseExtraOptions
