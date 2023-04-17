@@ -26,6 +26,7 @@ module.exports = {
     **readfile**
     $commandInfo[readfile;info.description]
     Usage: \`$commandInfo[readfile;info.usage]\`
+    Notes: \`$commandInfo[readfile;info.notes]\`
     Aliases: \`checkfile\`, \`viewfile\`
     ]
     $color[Yellow]
