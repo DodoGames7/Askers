@@ -214,7 +214,7 @@ $onlyIf[$interactionData[values[0]]==oldblurple;]
     name: "colormenu",
     type: "interaction",
     prototype: "selectMenu",
-    code: `$interactionModal[set your own Color!;customcolormenu;
+    code: `$interactionModal[Set your own Color!;customcolormenu;
         {actionRow:
           {textInput:hex code?:1:hexInput:true:e.g #FF0000:7:7}
         }
