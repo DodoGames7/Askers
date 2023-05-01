@@ -2,7 +2,7 @@ module.exports = {
     name: "devcmds",
     executeAt: "both",
     code: `$title[Dev Commands list]
-    $description[welcome to the dev commands list, this command just shows the available dev commands you can use as the bot owner of your own bot.
+    $description[Welcome to the dev commands list, this command just shows the available dev commands you can use as the bot owner.
     
     **eval**
     $commandInfo[eval;info.description]

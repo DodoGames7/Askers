@@ -228,12 +228,12 @@ $onlyIf[$interactionData[values[0]]==custom;]
     code: `$setGuildVar[akin_embedcolor;$textInputValue[hexInput]]
     $interactionReply[changed color to hex code \`$textInputValue[hexInput]\`;;;;all;true]
     
-    $onlyIf[$checkContains[$textInputValue[hexInput];#]==true;your hex code must contain the \`#\` before you can insert hex code.
+    $onlyIf[$checkContains[$textInputValue[hexInput];#]==true;you must use \`#\` before you can insert hex code, example#COLON# \`#1F1E33\`.
     {options:{ephemeral: true}}
     {extraOptions:{interaction: true}}
     ]
     
-    $onlyIf[$isValidHex[$textInputValue[hexInput]]==true;your hex code is invalid, please try to insert an valid hex code.
+    $onlyIf[$isValidHex[$textInputValue[hexInput]]==true;Your hex code is invalid, please try to insert an valid hex code.
     {options:{ephemeral: true}}
     {extraOptions:{interaction: true}}
     ]

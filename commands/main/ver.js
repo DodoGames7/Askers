@@ -5,24 +5,22 @@ module.exports = {
   info: {
     description: "View the current release of Askers"
   },
-  code: `$title[1.0.3-beta2, Perfection!]
+  code: `$title[1.0.3-preview, More Perfection]
   $description[
     **changes**
-    changed the ram on how it's shown in \`stats\` to look better.
-    updated djs (again).
-    added colors option finally after a while.
-    if the amount of users of the bot is large then separate them, for example \`1000\` would be \`1,000\`.
-    and other changes....
+   Added akinator colors feature, check it within settings command.
+  People who hosted the bot from the source code can now use a lot of dev commands for themselves.
+  And a lot of changes, such as making ram shown short in \`stats\` command.
 
     **fixes**
-    fixed \`func\` being usable by everyone than just the dev of the bot
-    add errors to \`func\` to clear confusion
+    Updated to aoi.js 6.2.0 to fix "un-fixable" bugs in the bot itself.
+    Fixed akinator color feature being accepting invisible space including not using \`#\` to enter hex code.
+    Fixed Grammar of some commands.
+    Re-force using aoi.db as part of aoi.js 6.2.0 changes.
 
     **other**
-   added \`readfile\` command for devs (run \`devcmds\` command for information).
-   moved interaction files of the bot and it's ready file to an folder named \`automation\`
-   make \`devcmds\` include Aliases of each bot owner command just like help command.
-   use \`#CHAR#commandInfo\` to return command descriptions instead of using the Classical method of writing descriptions manually at each comand.
+   Add alias \`changelog\` to \`version\` command.
+   Introduce Indonesian and Ukraine support in akinator languages feature, run settings command to check them out.
 
 
   ]

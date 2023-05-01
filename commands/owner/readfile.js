@@ -11,7 +11,7 @@ module.exports = {
         notes: "Only use this if you know what you're doing."
       },
     code: `$if[$charCount[$readFile[$message]]>=2000]
-    results has exceeded 2000 characters, creating the result as an file instead.
+    Results has exceeded 2000 characters. Creating the result as an file instead.
     $createFile[$readFile[$message];result.txt]
     $else
     \`\`\`js

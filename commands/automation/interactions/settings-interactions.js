@@ -3,10 +3,10 @@ module.exports = [{
   $if: "old",
   prototype: "button",
   code: `$if[$getGuildVar[akin_buttons]==false]
-  $interactionReply[Successfully enabled Akinator discord buttons;;;;all;true]
+  $interactionReply[Successfully enabled Akinator discord buttons.;;;;all;true]
   $setGuildVar[akin_buttons;true]
   $elseif[$getGuildVar[akin_buttons]==true]
-  $interactionReply[Successfully disabled Akinator discord buttons;;;;all;true]
+  $interactionReply[Successfully disabled Akinator discord buttons.;;;;all;true]
   $setGuildVar[akin_buttons;false]
   $endelseif
   $endif
@@ -27,7 +27,7 @@ $textSplit[$interactionData[customId];_] `
   $if: "old",
   prototype: "button",
   code: `
-  $interactionReply[what do you want to use;;{actionRow:{button:Character:1:character_$get[authorID]:false}{button:Animal:1:animal_$get[authorID]:false}{button:Object:1:object_$get[authorID]:false}};;all;true]
+  $interactionReply[What do you want to use.;;{actionRow:{button:Character:1:character_$get[authorID]:false}{button:Animal:1:animal_$get[authorID]:false}{button:Object:1:object_$get[authorID]:false}};;all;true]
 
 
   
@@ -46,7 +46,7 @@ $textSplit[$interactionData[customId];_]
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Character\`;;;;all;true]
+  code: `$interactionReply[Changed game type to \`Character\`.;;;;all;true]
   $setGuildVar[akin_gametype;character]
 
   $onlyIf[$getGuildVar[akin_gametype]!=character;
@@ -70,7 +70,7 @@ $textSplit[$interactionData[customId];_]
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Animal\`;;;;all;true]
+  code: `$interactionReply[Changed game type to \`Animal\`.;;;;all;true]
   $setGuildVar[akin_gametype;animal]
 
   $onlyIf[$getGuildVar[akin_gametype]!=animal;
@@ -93,7 +93,7 @@ $textSplit[$interactionData[customId];_]`
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[changed game type to \`Object\`;;;;all;true]
+  code: `$interactionReply[Changed game type to \`Object\`.;;;;all;true]
   $setGuildVar[akin_gametype;object]
 
   $onlyIf[$getGuildVar[akin_gametype]!=object;
@@ -116,7 +116,7 @@ $textSplit[$interactionData[customId];_]`
 },{ 
   type: "interaction",
   prototype: "button",
-  code: `$interactionReply[please select the Available language you would like to be used in akin start;;{actionRow:{selectMenu:akinmenu:Language:1:1:false:{selectMenuOptions:Arabic:ar:Arabic Language:false}{selectMenuOptions:English:en:Main Language:false}{selectMenuOptions:French:fr:French Language:false}{selectMenuOptions:German:de:German Language:false}{selectMenuOptions:italian:it:italian Language:false}{selectMenuOptions:Polish:pl:Polish Language:false}{selectMenuOptions:Portuguese:pt:Portuguese Language:false}{selectMenuOptions:Russian:ru:Russian Language:false}{selectMenuOptions:Turkish:tr:Turkish Language:false}{selectMenuOptions:Japanese:ja:Japanese Language:false}{selectMenuOptions:Spanish:es:Spanish Language:false}{selectMenuOptions:Hindi:hi:Hindi Language:false}{selectMenuOptions:Bengali:bn:Bengali Language:false}{selectMenuOptions:Ukraine:uk:Ukraine Language:false}{selectMenuOptions:Indonesian:id:Indonesian Language:false}}};;users;true]
+  code: `$interactionReply[Please select the Available language you would like to use in akinator command.;;{actionRow:{selectMenu:akinmenu:Language:1:1:false:{selectMenuOptions:Arabic:ar:Arabic Language:false}{selectMenuOptions:English:en:Main Language:false}{selectMenuOptions:French:fr:French Language:false}{selectMenuOptions:German:de:German Language:false}{selectMenuOptions:italian:it:italian Language:false}{selectMenuOptions:Polish:pl:Polish Language:false}{selectMenuOptions:Portuguese:pt:Portuguese Language:false}{selectMenuOptions:Russian:ru:Russian Language:false}{selectMenuOptions:Turkish:tr:Turkish Language:false}{selectMenuOptions:Japanese:ja:Japanese Language:false}{selectMenuOptions:Spanish:es:Spanish Language:false}{selectMenuOptions:Hindi:hi:Hindi Language:false}{selectMenuOptions:Bengali:bn:Bengali Language:false}{selectMenuOptions:Ukraine:uk:Ukraine Language:false}{selectMenuOptions:Indonesian:id:Indonesian Language:false}}};;users;true]
 
 
 $onlyif[$get[authorID]==$interactionData[author.id];
@@ -330,12 +330,12 @@ $onlyIf[$interactionData[values[0]]==bn;]
 },{
   type: "interaction",
   prototype: "button",
-  code: `$interactionUpdate[;{newEmbed:{title:Askers Settings}{description:here are the general options that you can change:
+  code: `$interactionUpdate[;{newEmbed:{title:Askers Settings}{description:Here are the general options that you can change#COLON#
   
-  **Button**#COLON# Whether or not the Game should start with discord Buttons
-  **Mode**#COLON# change the game mode
-  **Language**#COLON# change current language of akinator start system
-  **Color**#COLON# change the current embed color used in \`start\` cmd
+  **Button**#COLON# Whether or not the Game should start with discord Buttons (Deprecated, may be removed anytime).
+  **Mode**#COLON# Choose on what do you want from Askers in the game to ask you about.
+  **Language**#COLON# Change current language Used in akinator start system.
+  **Color**#COLON# Change the current embed color used in akinator cmd.
   
   **Current Settings**
   Button#COLON# \`$get[buttonsstatus]\`
@@ -345,7 +345,7 @@ $onlyIf[$interactionData[values[0]]==bn;]
   If The Shown settings are outdated after making changes, make sure to click the button with 🔄 Emoji to show the new settings.
 
  **Warning**
-NSFW are not supported and it will never be added to Askers, Attempting to guess an nsfw character will result in the following message#COLON# "I know who you are thinking of, but I believe this is not for young people"}{color:Yellow}};{actionRow:{button:Button:1:button_$authorID:false}{button:Mode:1:mode_$authorID:false}{button::2:refresh_$authorID:false:🔄}{button:Language:1:language_$authorID:false}{button:Color:1:color_$authorID:false}}]
+NSFW are not supported and it will never be added to Askers. Attempting to guess an nsfw character will result in the following message#COLON# "I know who you are thinking of, but I believe this is not for young people".}{color:Yellow}};{actionRow:{button:Button:1:button_$authorID:false}{button:Mode:1:mode_$authorID:false}{button::2:refresh_$authorID:false:🔄}{button:Language:1:language_$authorID:false}{button:Color:1:color_$authorID:false}}]
 
 $onlyif[$get[authorID]==$interactionData[author.id];
   You aren't the author of this interaction.

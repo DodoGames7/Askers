@@ -7,7 +7,7 @@ module.exports = {
   },
   code: `$title[Askers's stats]
   $addField[Uptime;$uptime[humanize]]
-  $addField[Askers version;1.0.3-beta2]
+  $addField[Askers version;1.0.3-preview]
   $addField[Bot Lang;[Aoi.js](https://www.npmjs.com/package/aoi.js);true]
   $addField[Amount of ram;$round[$ram]MB;true]
   $addField[Amount of CPU;$cpu;true]
