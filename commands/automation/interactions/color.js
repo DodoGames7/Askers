@@ -226,9 +226,9 @@ $onlyIf[$interactionData[values[0]]==custom;]
     type: "interaction",
     prototype: "modal",
     code: `$setGuildVar[akin_embedcolor;$textInputValue[hexInput]]
-    $interactionReply[changed color to hex code \`$textInputValue[hexInput]\`;;;;all;true]
+    $interactionReply[Changed color to hex code \`$textInputValue[hexInput]\`.;;;;all;true]
     
-    $onlyIf[$checkContains[$textInputValue[hexInput];#]==true;you must use \`#\` before you can insert hex code, example#COLON# \`#1F1E33\`.
+    $onlyIf[$checkContains[$textInputValue[hexInput];#]==true;You must use \`#\` before you can insert hex code, example#COLON# \`#1F1E33\`.
     {options:{ephemeral: true}}
     {extraOptions:{interaction: true}}
     ]
