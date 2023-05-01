@@ -8,7 +8,16 @@ const bot = new AoiClient({
    aoiLogs: false, // disables default aoi.js message for consoles
    events: ["onMessage", "onInteractionCreate"], // events
    aoiWarning: true, // disables aoi.js update warnings
-   guildOnly: false // don't force the commands to be only executed in guild
+   guildOnly: false, // don't force the commands to be only executed in guild
+   database: { // use aoi.db as the database for settings
+     type: "aoi.db",
+     db: require("aoi.db"),
+     tables: ["main"],
+     path: "./database/",
+     extraOptions: {
+         dbType: "KeyValue"
+     },
+ }
  })
 
 
