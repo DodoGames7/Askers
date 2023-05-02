@@ -6,6 +6,6 @@ module.exports = {
   },
   code: `$title[Inviting Askers]
   $description[You can invite Askers to your discord server by clicking on the button Below.]
-  $addButton[1;Invite;5;$nonEscape[$getBotInvite[sendmessages;viewchannel;managemessages]];false]
+  $addButton[1;Invite;5;$nonEscape[$getClientInvite[sendmessages;viewchannel;managemessages]];false]
   `
 }
