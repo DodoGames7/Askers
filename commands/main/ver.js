@@ -17,10 +17,12 @@ module.exports = {
     Fixed akinator color feature being accepting invisible space including not using \`#\` to enter hex code.
     Fixed Grammar of some commands.
     Re-force using aoi.db as part of aoi.js 6.2.0 changes.
+    Fixed an dev command named \`eval\` regarding the part of restricting it to the bot owner.
 
     **other**
    Add alias \`changelog\` to \`version\` command.
    Introduce Indonesian and Ukraine support in akinator languages feature, run settings command to check them out.
+   Bot now supports multiple bot owners if the bot hosted using Asker's source code was made in a discord team.
 
 
   ]

@@ -30,7 +30,7 @@ module.exports = {
     Aliases: \`checkfile\`, \`viewfile\`
     ]
     $color[Yellow]
-    $onlyForIDS[$botOwnerID;]
+    $onlyIf[$checkContains[$clientOwnerIDs[,];$authorID]==true;]
 
     `
 }

@@ -18,6 +18,6 @@ module.exports = {
     $readFile[$message]
     \`\`\`
     $endif
-    $onlyForIDS[$botOwnerid;]`
+    $onlyIf[$checkContains[$clientOwnerIDs[,];$authorID]==true;]`
 
 }

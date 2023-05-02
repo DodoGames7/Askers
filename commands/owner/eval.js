@@ -8,6 +8,6 @@ module.exports = {
   },
   code: `$eval[$message]
   $onlyIf[$message!=;Please evaluate something else to execute!]
-  $onlyForIDS[$botOwnerid;]`
+  $onlyIf[$checkContains[$clientOwnerIDs[,];$authorID]==true;]`
 }
 

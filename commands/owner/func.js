@@ -21,6 +21,6 @@ module.exports = [{
     $createObject[$jsonRequest[https://aoijs-api.bumblebeerox1.repl.co/api/aoijs/function?name=$message]]
     $onlyIf[$checkContains[$message[1];$]==true; Your command argument must contain the dollar sign \`$\` first.]
     $onlyIf[$message[1]!=;Provide an function name first.]
-    $onlyForIDS[$botOwnerid;]
+    $onlyIf[$checkContains[$clientOwnerIDs[,];$authorID]==true;]
     `
 }] // disclaimer: api has credits
