@@ -16,6 +16,6 @@
     "discord.js": "^14.10.1",
     "discord.js-akinator": "^4.0.4",
     "typescript": "^4.9.5",
-    "@discordjs/builders": "^1.5.0"
+    "@discordjs/builders": "^1.6.2"
   }
 }
