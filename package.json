@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "dodoGames",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "aoi.parser": "^1.2.5",
     "aoi.js": "^6.2.0",
