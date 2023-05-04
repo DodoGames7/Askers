@@ -21,8 +21,8 @@ akinator(message, {
         });
         ]
         $cooldown[5s;just wait for about %time% before you can use this command again]
-        $onlyClientPerms[managemessages;the following permissions are required in order to start game:
-\`MANAGE_MESSAGES\`
-please make sure i have these permissions otherwise i won't be able to work properly
+        $onlyClientPerms[managemessages;The following permissions are required in order to start game:
+\`ManageMessages\`
+Please make sure i have these permissions otherwise i won't be able to work properly.
 ]`
 }

@@ -1,6 +1,6 @@
 {
   "name": "Askers",
-  "version": "1.0.3-preview",
+  "version": "1.0.3-preview1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,16 +12,12 @@
   "license": "Apache-2.0",
   "dependencies": {
     "aoi.parser": "^1.2.5",
-    "aoi.js": "^6.2.0",
+    "aoi.js": "^6.2.6",
     "discord.js-akinator": "^4.0.4"
-  },
-  "overrides": {
-    "discord.js": {
-      "@discordjs/builders": "^1.6.2"
-    }
   },
   "devDependencies": {
     "discord.js": "^14.10.2",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "@discordjs/builders": "^1.6.2"
   }
 }
