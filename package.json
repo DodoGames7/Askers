@@ -16,7 +16,7 @@
     "discord.js-akinator": "^4.0.4"
   },
   "devDependencies": {
-    "discord.js": "^14.10.2",
+    "discord.js": "^14.11.0",
     "typescript": "^4.9.5",
     "@discordjs/builders": "^1.6.2"
   }
