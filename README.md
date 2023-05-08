@@ -1,3 +1,11 @@
+<table class="alert-info" align=center>
+<tr>
+    <td> ⚠ </td>
+    <td>
+        Askers development has been paused temporary. See this <a href="https://github.com/DodoGames7/Askers/discussions/9">announcement</a> for more information about this.
+    </td>
+</table>
+
 # Askers
 aoi.js v6 akinator bot with options to customize the game
 
