@@ -23,6 +23,9 @@ module.exports = {
 
  **credits**
  $commandInfo[credits;info.description]
+
+ **slash**
+ $commandInfo[slash;info.description]
   ]
   $color[Yellow]
 `
