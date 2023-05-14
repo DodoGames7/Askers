@@ -1,3 +1,14 @@
+<table class="alert-info" align=center>
+<tr>
+    <td> ⚠ </td>
+    <td>
+        Askers development is minimally maintained temporary. See this <a href="https://github.com/DodoGames7/Askers/discussions/9">announcement</a> for more information about this.
+    </td>
+</table>
+
+# Important
+Be aware that you can get very high ram usage for some reason. This is not Asker's fault because the stuff Askers uses to function is experiencing some problems considering that it's affecting all other akinator bots as well. Unfortunately, i have no control over that so bear with me on that.
+
 # Askers
 aoi.js v6 akinator bot with options to customize the game
 
