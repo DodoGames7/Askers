@@ -1,24 +1,19 @@
 module.exports = {
   name: "version",
   aliases: "ver",
-  code: `$title[1.0.2-extra]
+  code: `$title[1.0.2-3, important update]
   $description[
-    **fixes (1.0.2-patched)**
-    fixed the bot being able to respond to other bots if it has commands triggered (this was a issue on aoi.js so you can most likely say that it was a bug from it)
-    fixed \`update\` command for bots devs being not actually reloading commands
-    
-    **changes (1.0.2-patched)**
-    updated to 6.1.1 of aoi.js version 6
-    removed the \`(Experimental)\` tag from the description regarding \`Language\` in \`settings\` cmd
-    
-    **More (1.0.2-extra aka current)**
-    fix \`TextBased\` issue when clicking on a button by updating discord.js (which aoi.js is using it) to the latest. 
-    for more information read the changelog about discord.js version 14.8.0
-    
-    **small useless message from dev**
-1.0.2 more like long supported version now, lol.
+    **Developer message**
+   Hey folks! Another bug fix update for 1.0.2 as 1.0.3 still hasn't released yet! This version fixes the issue with \`start\` command which suddenly became unusable.
+
+   **What happened?**
+   The akinator api npm package which Askers uses for akinator experience has been experiencing some strange issues. 
+   The certificates was installed incorrectly which caused all discord bots that uses the package to not function at all, and so Askers got affected by this.
+
+   **Note**: despite the fix being implemented, it's possible that all akinator bots which is using this package will now get high ram usage which is something i cannot control sadly.
+   Be aware!
   ]
   $color[Yellow]
-  $footer[there we go again!]
+
 `
 }
