@@ -1,7 +1,7 @@
 {
   "name": "Askers",
   "version": "1.0.4-alpha",
-  "description": "",
+  "description": "An aoi.js akinator bot with options to customize the game.",
   "main": "index.js",
   "scripts": {
     "start": "node .",
