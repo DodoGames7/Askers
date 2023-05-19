@@ -12,7 +12,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "aoi.parser": "^1.2.6",
-    "aoi.js": "^6.2.6",
+    "aoi.js": "github:AkaruiDevelopment/aoi.js",
     "discord.js-akinator": "^4.0.6"
   },
   "devDependencies": {
