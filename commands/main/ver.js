@@ -11,6 +11,9 @@ module.exports = {
     Askers is introducing support to slash commands! This feature is currently experimental and does not work considering that this is alpha.
     Stay tuned!
 
+    **other**
+    added alias \`restartcmds\` and \`reloadcmds\` to dev command \`update\`
+
   ]
   $color[Yellow]
 `
