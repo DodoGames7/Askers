@@ -28,6 +28,9 @@ module.exports = {
     Usage: \`$commandInfo[readfile;info.usage]\`
     Notes: \`$commandInfo[readfile;info.notes]\`
     Aliases: \`checkfile\`, \`viewfile\`
+
+    **status**
+    Command to be added yet.
     ]
     $color[Yellow]
     $onlyIf[$checkContains[$clientOwnerIDs[,];$authorID]==true;]
