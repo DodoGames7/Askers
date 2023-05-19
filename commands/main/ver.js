@@ -13,6 +13,7 @@ module.exports = {
 
     **other**
     Added alias \`restartcmds\` and \`reloadcmds\` to dev command \`update\`.
+    Added alias \`h\` for \`help\` command.
 
   ]
   $color[Yellow]
