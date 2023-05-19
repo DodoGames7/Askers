@@ -1,5 +1,6 @@
 module.exports = {
 name: "update",
+aliases: ["restartcmds", "reloadcmds"],
 executeAt: "both",
 info: {
     description: "Restarts the entire commands of the bot"

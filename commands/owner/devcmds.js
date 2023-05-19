@@ -16,6 +16,7 @@ module.exports = {
 
     **update**
     $commandInfo[update;info.description]
+    Aliases: \`restartcmds\`, \`reloadcmds\`
 
     **func**
     $commandInfo[func;info.description]
