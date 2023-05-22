@@ -23,9 +23,10 @@ akinator(message, {
         ]
         $cooldown[5s;just wait for about %time% before you can use this command again]
         $if[$getGuildVar[akin_buttons]==false]
-        $onlyClientPerms[managemessages;The following permissions are required in order to start game with buttons disabled:
+        $onlyClientPerms[managemessages;The following permissions are required in order to start the game with buttons disabled:
 \`ManageMessages\`
 Please make sure i have these permissions otherwise i won't be able to start the game without buttons.
+**Note**: this permission is only used to delete the user's answer in order to make the chat clean.
 ]
 $endif`
 }
