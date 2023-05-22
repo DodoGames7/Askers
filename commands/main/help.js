@@ -1,7 +1,7 @@
 module.exports = {
   name: "help",
   aliases: "h",
-  executeAt: "guild",
+  executeAt: "both",
   code: `$title[Asker's available commands]
   $description[**start**
   $commandInfo[start;info.description]
