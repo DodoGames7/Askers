@@ -3,7 +3,7 @@ const { AoiClient, LoadCommands, Util } = require("aoi.js");
 
 const bot = new AoiClient({
    token: process.env.TOKEN, // token (env is likely used for securing bot token, do not remove)
-   prefix: ["a!", "<@$clientID>"],  //Discord Bot Prefix
+   prefix: ["a!", "<@$clientID>"], // Prefix of the bot (with mentions support)
    intents: ["MessageContent", "Guilds", "GuildMessages", "DirectMessages"], // the discord.js intents
    aoiLogs: false, // disables default aoi.js message for consoles
    events: ["onMessage", "onInteractionCreate"], // events
@@ -15,7 +15,7 @@ const bot = new AoiClient({
      tables: ["main"],
      path: "./database/",
      extraOptions: {
-         dbType: "KeyValue"
+         dbType: "KeyValue" // aoi.db option, do not modify
      },
  }
  })
