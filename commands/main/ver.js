@@ -5,23 +5,30 @@ module.exports = {
   info: {
     description: "View the current release of Askers"
   },
-  code: `$title[1.0.3-preview1, Emergency Update]
+  code: `$title[1.0.3 - it's finally here!]
   $description[
-    This update is here to fix aoi.js mistakes where it caused the bot to be very broken. I apologize if this has annoyed you.
+    **Hey there!**
+   1.0.3 preview circle is almost over! This release took a lot of months to fix bugs and mistakes in the bot which is why 1.0.2 was still maintained for months!
+   In the meantime, feel free to try out this version. Enjoy your akinator game!
+   
+   **changes**
+   You can now change embed color used in \`start\` command! Check out \`settings\` command for more information.
+   People who hosted the bot will now have access to more dev commands! 
+   In addition to this, people in a discord team with the bot used can also now use dev commands as well!
+   Added \`changelog\` alias to \`version\` command
 
    **fixes**
-Fixed \`isJSONEncodable\` Issue which causes the bot to be unusable.
-Updated djs to the latest since it appears to be broken by json error as well.
+   Fixed the infamous permission error that gets triggered when you have buttons enabled. It was useless for buttons so this was annoying.
+   Lot of grammar fixes and minor changes to stuff to make more sense
+   Fixed \`library\` being mentioned twice in \`stats\` command
+   Updated aoi.js to fix bugs related to the package that isn't part of the bot
 
-To make sure that this is permanent fix, i have updated to aoi.js 6.2.6 which fixes this issue alongside with installing discord.js builders version 1.6.2.
-
-
-**other**
-Move the option \`English\` from language feature to the top rather than \`Arabic\`.
-Changed permission error messages to not use capital letters for the permission name it wants anymore.
-
-**notice from dev**
-If you have missed on what has been changed in Askers Preview Release for 1.0.3, then you can visit the changelog [here](https://github.com/DodoGames7/Askers/releases/tag/1.0.3-preview).
+   **other**
+   Make ram shown in \`stats\` shorter
+   Added important note to permission error \`managemessages\` if buttons are disabled
+   Askers now uses \`#CHAR#commandInfo\` to return command informations and more!
+   Support for more languages in \`settings\`
+   The text "Aoi.js" now has an hyperlink which returns the link to aoi.js package on npm site
   ]
   $color[Yellow]
 `

@@ -4,22 +4,22 @@ module.exports = {
   code: `$title[Asker's available commands]
   $description[**start**
   $commandInfo[start;info.description]
-  aliases: \`akin\`, \`akinator\`
+  Aliases: \`akin\`, \`akinator\`
 
   **settings**
   $commandInfo[settings;info.description]
-  aliases: \`setting\`
+  Aliases: \`setting\`
   
   **version**
   $commandInfo[version;info.description]
-  aliases: \`ver\`, \`changelog\`
+  Aliases: \`ver\`, \`changelog\`
 
   **invite**
   $commandInfo[invite;info.description]
 
   **stats**
   $commandInfo[stats;info.description]
-  aliases: \`botinfo\`
+  Aliases: \`botinfo\`
 
  **credits**
  $commandInfo[credits;info.description]
