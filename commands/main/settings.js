@@ -12,7 +12,7 @@ module.exports = {
   **Button**: Whether or not the Game should start with discord Buttons (Deprecated, may be removed anytime).
   **Mode**: Choose on what do you want from Askers in the game to ask you about.
   **Language**: Change current language Used in akinator start system.
-  **Color**: Change the current embed color used in akinator cmd.
+  **Color**: Change the current embed color used in akinator cmd. (Experimental)
   
   **Current Settings**
   Button: \`$get[buttonsstatus]\`
