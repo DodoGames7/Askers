@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "discord.js": "^14.11.0",
-    "typescript": "^4.9.5",
-    "@discordjs/builders": "^1.6.2"
+    "typescript": "^4.9.5"
   }
 }
