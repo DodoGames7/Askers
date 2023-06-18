@@ -3,7 +3,7 @@ module.exports = {
   aliases: "botinfo",
   code: `$title[Askers's stats]
   $addField[Uptime;$uptime[humanize]]
-  $addField[Askers version;1.0.2-3]
+  $addField[Askers version;1.0.2-4 (Beta)]
   $addField[Library Language;Aoi.js;true]
   $addField[Amount of ram;$ram;true]
   $addField[Amount of CPU;$cpu;true]

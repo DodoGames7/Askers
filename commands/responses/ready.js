@@ -2,6 +2,6 @@ module.exports = {
   name: "readycommand",
   channel: "",
   type: "ready",
-  code: `$log[Ready!, invite the bot from there: $getBotInvite[sendmessages;viewchannel;managemessages]
+  code: `$log[Ready! Invite the bot here: $getClientInvite[sendmessages;viewchannel;managemessages]
 ]`
 }
