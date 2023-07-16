@@ -9,7 +9,7 @@ const bot = new AoiClient({
    events: ["onMessage", "onInteractionCreate"], // Events
    database: {
      type: "aoi.db",
-     db: require("aoi.db"),
+     db: require("@akarui/aoi.db"),
      tables: ["main"],
      path: "./database/",
      extraOptions: {
@@ -33,10 +33,10 @@ const loader = new LoadCommands(bot)
  */
 
  // parser support
-const { parse, createAst} = require( 'aoi.parser' );
+const { parse, createAst} = require( '@akarui/aoi.parser' );
 const {
      parseExtraOptions
-} = require( 'aoi.parser/components' );
+} = require( '@akarui/aoi.parser/components' );
 
 Util.parsers.ErrorHandler = parse;
 
