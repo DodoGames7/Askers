@@ -2,7 +2,7 @@
 <tr>
     <td> ⚠ </td>
     <td>
-        Askers is no longer maintained has been discontinued since. This is due to the fact that i have lost interest in making it work normally again. The last version will still be available (including the next version) but there will be no updates from now on.
+        Askers is no longer maintained and has been discontinued since. This is due to the fact that i have lost interest in making it work normally again. The last version will still be available (including the next version) but there will be no updates from now on.
     </td>
 </table>
 
