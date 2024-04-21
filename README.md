@@ -2,7 +2,7 @@
 <tr>
     <td> ⚠ </td>
     <td>
-        Askers development is minimally maintained temporary. See this <a href="https://github.com/DodoGames7/Askers/discussions/9">announcement</a> for more information about this.
+        Askers is no longer maintained has been discontinued since. This is due to the fact that i have lost interest in making it work normally again. The last version will still be available (including the next version) but there will be no updates from now on.
     </td>
 </table>
 
